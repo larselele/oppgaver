@@ -15,8 +15,7 @@
         font-size: 18px;
         font-weight: bold;
         text-align: center;
-        margin-bottom: 8px;
-        margin-top: 60px;
+        margin-bottom: 4px;
       }
 
       .user-handle {
@@ -24,19 +23,19 @@
         color: #737373;
         font-size: 16px;
         text-align: center;
-        margin-bottom: 4px;
+        margin-bottom: 12px;
       }
 
       .user-stats {
         color: #737373;
-        font-size: 16px;
+        font-size: 14px;
         text-align: center;
         margin-bottom: 4px;
       }
 
       .relation {
         color: #737373;
-        font-size: 16px;
+        font-size: 14px;
         text-align: center;
       }
 
@@ -45,7 +44,10 @@
       }
 
       .container {
-        width: 400px;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+        padding: 40px;
+        border-radius: 8px;
+        width: fit-content;
       }
 
       .button-container {
@@ -73,10 +75,26 @@
       button:active {
         opacity: 0.5;
       }
+
+      .img-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+      }
+
+      .user-img {
+        width: 96px;
+        height: 96px;
+        object-fit: cover;
+        border-radius: 100px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
+      <div class="img-container">
+        <img src="user-img.jpg" class="user-img" />
+      </div>
       <p class="user-name">Erling Braut Haaland</p>
       <p class="user-handle">erling</p>
       <p class="user-stats">38,5M følgere &#183; 721 innlegg</p>
