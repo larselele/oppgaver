@@ -5,21 +5,42 @@
     <meta name="viewport" content="width=|, initial-scale=1.0" />
     <title>Example text</title>
     <style>
+      /* 
+      family, size, weight, style, text-align, width + line-height,
+      */
+
       .example-text {
         font-family: Arial;
         font-size: 40px;
         font-weight: bold;
-        font-style: italic;
         text-align: center;
+        font-style: italic;
+        line-height: 140%;
         width: 400px;
       }
 
-      /* 
-      family, size, weight, style, text-align, width + line-height,
-      */
+      p {
+        font-family: Arial;
+      }
+
+      .user-name {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .user-handle {
+        text-align: center;
+      }
+
+      .user-stats {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
-    <p class="example-text">Hello, world! This is an example text</p>
+    <p class="user-name">Erling Braut Haaland</p>
+    <p class="user-handle">@erling</p>
+    <p class="user-stats">23.4M &#183; 721 innlegg</p>
   </body>
 </html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oppgaver uke 7</title>
+    <style>
+      * {
+        font-family: Arial;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      p {
+        margin-bottom: 20px;
+        margin-top: 60px;
+        max-width: 500px;
+      }
+
+      .secondary {
+        color: #636363;
+      }
+
+      body {
+        padding: 32px;
+      }
+
+      .oppg1 {
+        width: 300px;
+        border-radius: 24px;
+      }
+
+      .oppg2 {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .circle {
+        border-radius: 150px;
+      }
+
+      .search {
+        border-radius: 4px;
+        font-size: 16px;
+        padding: 12px;
+        border: 1px solid grey;
+        outline: none;
+      }
+
+      .search2 {
+        padding: 16px;
+        border: none;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.226);
+        border-radius: 200px;
+        outline: none;
+        width: 500px;
+      }
+
+      .signup-btn {
+        background-color: #0a66c2;
+      }
+
+      p.form {
+        margin: 0;
+        font-weight: bold;
+        color: #000000bf;
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+
+      input.linkedin {
+        border: 1px solid #000000;
+        border-radius: 4px;
+        padding: 8px 16px;
+        width: 350px;
+      }
+
+      p.desc {
+        font-size: 14px;
+        color: #505050;
+        margin: 12px 0;
+      }
+
+      button.linkedin {
+        background-color: #0a66c2;
+        border: none;
+        border-radius: 200px;
+        padding: 16px;
+        color: white;
+        width: 350px;
+        cursor: pointer;
+        transition: ease 150ms;
+        font-size: 16px;
+      }
+
+      button.linkedin:hover {
+        background-color: #07417a;
+      }
+
+      input.twitter {
+        vertical-align: middle;
+        margin: 0;
+        margin-left: 12px;
+        width: 350px;
+        color: #1d1d1d;
+        border: none;
+        outline: none;
+        font-size: 16px;
+      }
+
+      img.twitter {
+        width: 48px;
+        height: 48px;
+        border-radius: 24px;
+        object-fit: cover;
+        vertical-align: middle;
+      }
+
+      button.twitter {
+        vertical-align: middle;
+        background-color: rgb(33, 130, 221);
+        color: white;
+        border: none;
+        border-radius: 200px;
+        padding: 8px 16px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button.twitter:hover {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <p>7a: Last inn bildet med bredde 300px og avrundede hjørner</p>
+    <img src="cat.jpg" class="oppg1" />
+    <p>7b: Gjør bildet kvadratisk og sentrer bildet inne i kvadratet</p>
+    <img src="cat.jpg" class="oppg2" />
+    <p>
+      7c: Gjør bildet til en sirkel
+      <span class="secondary">(bruk border-radius)</span>
+    </p>
+    <img src="cat.jpg" class="oppg2 circle" />
+    <p>7d: Lag en tekstboks med avrundede hjørner</p>
+    <input class="search" type="text" placeholder="Search" />
+
+    <p>7e: Med skygge og uten border</p>
+    <input
+      class="search2"
+      type="text"
+      placeholder="Search google or type a URL"
+    />
+    <p>7f: LinkedIn signup</p>
+    <p class="form">E-post</p>
+    <input class="linkedin" type="text" />
+    <p class="desc">
+      By clicking Agree & join, you agree to the Privacy Policy
+    </p>
+    <button class="linkedin">Agree & Join</button>
+
+    <p>
+      7g: Twitter text-box
+      <span class="secondary"
+        >(Tips: bruk vertical-align: middle; på hvert element eller wrap alt i
+        en flex-container for å oppnå resultatet)</span
+      >
+    </p>
+    <img src="cat.jpg" class="twitter" />
+    <input class="twitter" placeholder="What's happening?" />
+    <button class="twitter">Tweet</button>
+  </body>
+</html>
