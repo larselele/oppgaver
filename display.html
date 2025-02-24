@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oppgaver uke 7</title>
+    <style>
+      * {
+        font-family: Arial;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      p {
+        max-width: 600px;
+      }
+
+      .oppgave {
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 100px;
+      }
+
+      .oppgave:first-of-type {
+        margin-top: 0;
+      }
+
+      .secondary {
+        color: #636363;
+      }
+
+      body {
+        padding: 32px;
+      }
+
+      .input-1 {
+        display: block;
+        margin-bottom: 4px;
+        padding: 8px 12px;
+        border-radius: 4px;
+        border: 1px solid grey;
+        outline: none;
+      }
+
+      .text-2 {
+        display: inline-block;
+        vertical-align: middle;
+        width: 220px;
+        margin: 0px;
+      }
+
+      .button-2 {
+        vertical-align: middle;
+      }
+
+      .search-3 {
+        padding: 16px;
+        border: none;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.226);
+        border-radius: 200px;
+        outline: none;
+        width: 500px;
+      }
+
+      .img-3 {
+        margin: 24px 0;
+        margin-left: 100px;
+        display: block;
+      }
+
+      .name-4,
+      .mail-4 {
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid grey;
+        outline: none;
+        font-size: 16px;
+        margin-bottom: 8px;
+        margin-right: 4px;
+        width: 200px;
+      }
+
+      .mail-4 {
+        display: block;
+        width: 408px;
+      }
+
+      .btn-4 {
+        width: 408px;
+        padding: 16px;
+        border-radius: 8px;
+        background-color: rgb(11, 83, 240);
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: ease 150ms;
+      }
+
+      .btn-4:hover {
+        background-color: #0c46c2;
+      }
+
+      .input-5 {
+        display: block;
+        margin-bottom: 8px;
+        padding: 12px 24px;
+        font-size: 16px;
+        outline: none;
+        background-color: #f0f0f0;
+        border: none;
+        width: 400px;
+      }
+
+      .btn-5-secondary,
+      .btn-5-primary {
+        padding: 12px 24px;
+        border: none;
+        background-color: #f0f0f0;
+        margin-top: 12px;
+        cursor: pointer;
+      }
+
+      .btn-5-primary {
+        background-color: black;
+        color: white;
+        margin-right: 12px;
+      }
+
+      .btn-5-primary:hover,
+      .btn-5-secondary:hover {
+        opacity: 0.95;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="oppgave">
+      1: Lag to tekstbokser og plasser dem under hverandre på hver sin linje
+      <span class="secondary">(Bruk display: block)</span>
+    </p>
+    <input type="text" placeholder="Name" class="input-1" />
+    <input type="text" placeholder="Email" class="input-1" />
+
+    <p class="oppgave">
+      2: lag en paragraph og to knapper og plasser dem på samme linje
+      <span class="secondary"
+        >(Bruk width, display: inline-block, og vertical-align: middle)</span
+      >
+    </p>
+
+    <p class="text-2">
+      Thanks for chatting with our customer support. Would you like to take our
+      quick survey?
+    </p>
+    <button class="button-2">Yes</button>
+    <button class="button-2">No</button>
+
+    <p class="oppgave">
+      3: Gjenskap søkeskjemaet til Google. Vi lagde søkefeltet i forrige uke, du
+      kan kopiere den om du ikke vil lage en ny.
+      <span class="secondary"
+        >(Posisjoner logoen med margin eller bruk flexbox.)</span
+      >
+    </p>
+    <img src="/google.png" class="img-3" />
+
+    <input
+      class="search-3"
+      type="text"
+      placeholder="Search google or type a URL"
+    />
+
+    <p class="oppgave">
+      4: Gjenskap designet
+      <span class="secondary">(Blåfarge hex: #0c46c2)</span>
+    </p>
+    <input placeholder="First name" class="name-4" />
+    <input placeholder="Last name" class="name-4" />
+    <input placeholder="Email" class="mail-4" />
+    <button class="btn-4">Sign Up</button>
+
+    <p class="oppgave">
+      5: Gjenskap designet <span class="secondary">(Grå hex: #F0F0F0)</span>
+    </p>
+    <p class="header-5"></p>
+    <input type="text" placeholder="Enter pickup location" class="input-5" />
+    <input type="text" placeholder="Enter destination" class="input-5" />
+    <button class="btn-5-primary">Request now</button>
+    <button class="btn-5-secondary">Schedule for later</button>
+  </body>
+</html>
