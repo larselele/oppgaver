@@ -14,16 +14,28 @@
         border-radius: 100px;
         object-fit: cover;
       }
+
+      p {
+      }
+
+      .user-followers,
+      .user-posts {
+        display: inline-block;
+      }
+
+      .search {
+        display: block;
+      }
     </style>
   </head>
   <body>
-    <input placeholder="Search..." />
+    <input class="search" placeholder="Search..." />
 
     <img class="user-img" src="img/cat.jpg" />
-    <p>Mr. Cat</p>
+    <p class="user-name">Mr. Cat</p>
     <p>@catman</p>
-    <p>22K følgere &#183;</p>
-    <p>214 innlegg</p>
+    <p class="user-followers">22K følgere &#183;</p>
+    <p class="user-posts">214 innlegg</p>
     <p>I am an AI-generated cat</p>
   </body>
 </html>
