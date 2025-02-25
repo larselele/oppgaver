@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div-elementet</title>
+    <style>
+      * {
+        font-family: Arial;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      p {
+        max-width: 600px;
+      }
+
+      .oppgave {
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 100px;
+      }
+
+      .oppgave:first-of-type {
+        margin-top: 0;
+      }
+
+      .secondary {
+        color: #636363;
+      }
+
+      .challenge {
+        color: rgb(214, 0, 0);
+      }
+
+      body {
+        padding: 32px;
+      }
+
+      .square {
+        height: 120px;
+        width: 120px;
+        background-color: red;
+      }
+
+      .circle {
+        height: 120px;
+        width: 120px;
+        background-color: green;
+        border-radius: 200px;
+      }
+
+      .container-3{
+        border: 1px solid #cccccc;
+        width: 400px;
+        padding: 20px;
+      }
+
+      .text-3{
+        margin-bottom: 12px;
+      }
+
+      .container-4{
+        background-color: rgb(29, 29, 29);
+        padding: 24px;
+        width: 400px;
+      }
+
+      .header-4{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+
+      .text-4{
+        color: #cccccc;
+      }
+
+      /*oppgave 5*/
+
+      .container-5{
+        display: inline-block;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+        padding: 16px;
+        border-radius: 8px;
+      }
+
+      input.twitter {
+        vertical-align: middle;
+        margin: 0;
+        margin-left: 12px;
+        width: 350px;
+        color: #1d1d1d;
+        border: none;
+        outline: none;
+        font-size: 16px;
+      }
+
+      img.twitter {
+        width: 48px;
+        height: 48px;
+        border-radius: 24px;
+        object-fit: cover;
+        vertical-align: middle;
+      }
+
+      button.twitter {
+        vertical-align: middle;
+        background-color: rgb(33, 130, 221);
+        color: white;
+        border: none;
+        border-radius: 200px;
+        padding: 8px 16px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button.twitter:hover {
+        opacity: 0.9;
+      }
+
+      .container-6{
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        display: inline-block;
+      }
+
+      .img-6{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .name-6,
+      .stats-6,
+      .btn-6{
+        margin-left: 16px;
+      }
+
+      .name-6{
+        margin-top: 12px;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+
+      .stats-6{
+        color: #696969;
+      }
+
+      .btn-6{
+        margin: 16px;
+        background-color: #0866ff;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .btn-6:hover{
+        opacity: 0.9;
+      }
+
+      .card-7{
+        margin-right: 12px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <p class="oppgave">
+      1: Lag en &lt;div&gt; og gjør den om til et rødt kvadrat <span class="secondary">(Husk at en div bare strekker seg til å ramme inn innholdet, og derfor ikke har noen størrelse når den er tom. Bruk width og height).</span>
+    </p>
+    <div class="square"></div>
+
+    <p class="oppgave">
+      2: Lag en &lt;div&gt; og gjør den om til en grønn sirkel
+    </p>
+    <div class="circle"></div>
+
+    <p class="oppgave">
+      3: Gjenskap designet ved å wrappe elementene i en &lt;div&gt; og gi den en
+      border
+      <span class="secondary"
+        >(1px solid #CCCCCC). Bruk padding: for luft på innsiden av boksen.</span
+      >
+      <div class="container-3">
+          <p class="text-3">Satisfied with our service?</p>
+          <button>Yes</button>
+          <button>No</button>
+      </div>
+    </p>
+
+    <p class="oppgave">4: Gjenskap designet ved å bruke en &lt;div&gt; med 2 paragraphs inni </p>
+    <div class="container-4">
+        <p class="header-4">Install YouTube Music</p>
+        <p class="text-4">Add YouTube Music to your desktop for quick and easy access</p>
+    </div>
+
+    <p class="oppgave">5: Ta designet vi lagde i uke 7, wrap det i en &lt;div&gt; og gi den en skygge ved å bruke <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow">box-shadow</a></p>
+    <div class="container-5">
+        <img src="cat.jpg" class="twitter" />
+        <input class="twitter" placeholder="What's happening?" />
+        <button class="twitter">Tweet</button>
+    </div>
+
+    <p class="oppgave challenge">6: Utfordringsoppgave - Gjenskap designet <span class="secondary">(Et slikt designelement kalles et "card")</span></p>
+    <div class="container-6">
+        <img class="img-6" src="cat.jpg">
+        <p class="name-6">Catman</p>
+        <p class="stats-6">2 mutual friends</p>
+        <button class="btn-6">Add friend</button>
+    </div>
+
+    <p class="oppgave challenge">7: Utfordringsoppgave - Gjenskap designet ved å plassere flere cards ved siden av hverandre. <span class="secondary">(Du må bruke display: inline-block, og margin-right. Du kan bruke andre bilder hvis du vil) </span> </p>
+    <div class="container-6 card-7">
+        <img class="img-6" src="cat.jpg">
+        <p class="name-6">Catman</p>
+        <p class="stats-6">2 mutual friends</p>
+        <button class="btn-6">Add friend</button>
+    </div>
+    <div class="container-6 card-7">
+        <img class="img-6" src="bird.jpg">
+        <p class="name-6">Birdboy</p>
+        <p class="stats-6">5 mutual friends</p>
+        <button class="btn-6">Add friend</button>
+    </div>
+    <div class="container-6">
+        <img class="img-6" src="dog.jpg">
+        <p class="name-6">Dogman</p>
+        <p class="stats-6">7 mutual friends</p>
+        <button class="btn-6">Add friend</button>
+    </div>
+
+  </body>
+</html>

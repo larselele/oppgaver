@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display - Oppgaver</title>
+    <style>
+      * {
+        font-family: Arial;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      p {
+        max-width: 600px;
+      }
+
+      .oppgave {
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 100px;
+      }
+
+      .oppgave:first-of-type {
+        margin-top: 0;
+      }
+
+      .secondary {
+        color: #636363;
+      }
+
+      .challenge {
+        color: rgb(214, 0, 0);
+      }
+
+      body {
+        padding: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="oppgave">
+      1: Lag to tekstbokser og plasser dem under hverandre på hver sin linje
+      <span class="secondary">(Bruk display: block)</span>
+    </p>
+    <input type="text" placeholder="Name" class="input-1" />
+    <input type="text" placeholder="Email" class="input-1" />
+  </body>
+</html>
