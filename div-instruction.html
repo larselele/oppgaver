@@ -3,35 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>div-elementet i HTML</title>
+    <title>Div i HTML</title>
     <style>
       * {
         font-family: Arial, Helvetica, sans-serif;
       }
       .user-img {
-        width: 150px;
-        height: 150px;
-        border-radius: 100px;
         object-fit: cover;
+        width: 100%;
       }
 
-      div {
-        width: 300px;
+      p {
+      }
+
+      .user-name {
+        font-weight: bold;
+        margin: 0;
+        margin: 12px 0px 4px 0px;
+      }
+
+      .user-handle {
+        color: #696969;
+        margin: 0;
+      }
+
+      .user-followers,
+      .user-posts {
+        display: inline-block;
+        color: #696969;
+        margin: 16px 0px 16px 0px;
+      }
+
+      .user-description {
+        color: #696969;
+        margin: 0;
+      }
+
+      .search {
+        display: block;
+      }
+
+      .example-div {
         display: inline-block;
       }
 
-      .user-stats {
-        display: inline-block;
+      .user-profile-card {
+        width: 240px;
+      }
+
+      .flexbox {
       }
     </style>
   </head>
   <body>
-    <input placeholder="Search..." />
-    <img class="user-img" src="img/cat.jpg" />
-    <p class="user-name">Mr. Cat</p>
-    <p class="user-handle">@catman</p>
-    <p class="user-stats">22K følgere &#183;</p>
-    <p class="user-stats">214 innlegg</p>
-    <p class="user-description">I am an AI-generated cat</p>
+    <input class="search" placeholder="Search..." />
+    <div class="flexbox">
+      <div class="user-profile-card">
+        <img class="user-img" src="img/cat.jpg" />
+        <p class="user-name">Mr. Cat</p>
+        <p class="user-handle">@catman</p>
+        <p class="user-followers">22K følgere &#183;</p>
+        <p class="user-posts">214 innlegg</p>
+        <p class="user-description">
+          I am an AI-generated image of an orange cat
+        </p>
+      </div>
+      <div class="user-profile-card">
+        <img class="user-img" src="img/cat.jpg" />
+        <p class="user-name">Mr. Cat</p>
+        <p class="user-handle">@catman</p>
+        <p class="user-followers">22K følgere &#183;</p>
+        <p class="user-posts">214 innlegg</p>
+        <p class="user-description">I am an Aange cat</p>
+      </div>
+    </div>
   </body>
 </html>

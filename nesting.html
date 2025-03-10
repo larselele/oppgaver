@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div-elementet</title>
+    <style>
+      * {
+        font-family: Arial;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      p {
+        max-width: 600px;
+      }
+
+      .oppgave {
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 100px;
+      }
+
+      .oppgave:first-of-type {
+        margin-top: 0;
+      }
+
+      .secondary {
+        color: #636363;
+      }
+
+      .challenge {
+        color: rgb(214, 0, 0);
+      }
+
+      body {
+        padding: 32px;
+      }
+
+      .profile-picture {
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        object-fit: cover;
+      }
+
+      .image-container,
+      .text-container,
+      .btn-container {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .text-container {
+        width: 300px;
+        margin-left: 16px;
+      }
+      .twitter-btn {
+        background-color: rgb(16, 132, 240);
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        font-size: 18px;
+      }
+
+      p.user-name {
+        font-weight: bold;
+      }
+
+      p.user-description {
+        color: #696969;
+      }
+
+      p.status {
+        color: #696969;
+        font-size: 14px;
+      }
+
+      p.user-name,
+      p.user-description,
+      p.status {
+        margin-bottom: 4px;
+      }
+
+      .twitter-card {
+        margin-bottom: 16px;
+        margin-top: 16px;
+      }
+
+      .card-container {
+        padding: 8px 24px;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.205);
+        display: inline-block;
+        border-radius: 8px;
+      }
+
+      .thumbnail {
+        width: 450px;
+        border-radius: 8px;
+      }
+
+      .channel-picture {
+        width: 36px;
+        height: 36px;
+        border-radius: 200px;
+        object-fit: cover;
+      }
+
+      .video-description {
+        width: 450px;
+        margin-top: 12px;
+      }
+
+      .video-left-section {
+        display: inline-block;
+      }
+
+      .video-right-section {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 10px;
+      }
+
+      .video-title {
+        font-weight: bold;
+        color: #0f0f0f;
+        margin-bottom: 4px;
+      }
+
+      .channel-name {
+        color: #606060;
+        font-size: 14px;
+        margin-bottom: 2px;
+      }
+
+      .video-stats {
+        color: #606060;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="oppgave">
+      1: Gjenskap designet. Bruk display: block; for å lage vertikale layouter,
+      og display: inline-block; for å lage horisontale layouter.
+    </p>
+    <div class="twitter-card">
+      <div class="image-container">
+        <img src="img/cat.jpg" class="profile-picture" />
+      </div>
+      <div class="text-container">
+        <p class="user-name">Catman</p>
+        <p class="user-description">the cat</p>
+        <p class="status">Popular</p>
+      </div>
+
+      <div class="btn-container">
+        <button class="twitter-btn">Follow</button>
+      </div>
+    </div>
+    <p class="oppgave">2: Gjenskap designet.</p>
+    <div class="card-container">
+      <div class="twitter-card">
+        <div class="image-container">
+          <img src="img/cat.jpg" class="profile-picture" />
+        </div>
+        <div class="text-container">
+          <p class="user-name">Catman</p>
+          <p class="user-description">the cat</p>
+          <p class="status">Popular</p>
+        </div>
+        <div class="btn-container">
+          <button class="twitter-btn">Follow</button>
+        </div>
+      </div>
+      <div class="twitter-card">
+        <div class="image-container">
+          <img src="img/dog.jpg" class="profile-picture" />
+        </div>
+        <div class="text-container">
+          <p class="user-name">Dogman</p>
+          <p class="user-description">the dog</p>
+          <p class="status">Popular</p>
+        </div>
+        <div class="btn-container">
+          <button class="twitter-btn">Follow</button>
+        </div>
+      </div>
+      <div class="twitter-card">
+        <div class="image-container">
+          <img src="img/bird.jpg" class="profile-picture" />
+        </div>
+        <div class="text-container">
+          <p class="user-name">Birdboy</p>
+          <p class="user-description">the birdie</p>
+          <p class="status">Popular</p>
+        </div>
+        <div class="btn-container">
+          <button class="twitter-btn">Follow</button>
+        </div>
+      </div>
+    </div>
+
+    <p class="oppgave">3: Gjenskap designet</p>
+    <div class="video-preview">
+      <div class="thumbnail-container">
+        <img src="img/thumbnail.avif" class="thumbnail" />
+        <div class="video-description">
+          <div class="video-left-section">
+            <img src="img/cat.jpg" class="channel-picture" />
+          </div>
+          <div class="video-right-section">
+            <p class="video-title">
+              Extended highlights: Liverpool 3-1 Southampton
+            </p>
+            <p class="channel-name">Liverpool FC</p>
+            <p class="video-stats">346K views &centerdot; 14 hours ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
