@@ -3,20 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Flexbox</title>
   </head>
   <body>
     <div
       style="
         background-color: black;
-        padding: 10px;
+        padding: 8px;
         display: flex;
         flex-direction: row;
       "
     >
-      <div style="background-color: pink; width: 100px">100px</div>
-      <div style="background-color: lightblue; flex: 1">flex: 1</div>
-      <div style="background-color: lightgreen; flex: 1">flex: 1</div>
+      <div style="background-color: lightblue; width: 100px">100px</div>
+      <div style="background-color: pink; flex: 1">200px</div>
+      <div style="background-color: rgb(224, 37, 68); flex: 1">200px</div>
+    </div>
+
+    <div
+      style="
+        background-color: black;
+        padding: 8px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+      "
+    >
+      <div style="background-color: lightblue">100px</div>
+      <div style="background-color: pink; flex: 0">200px</div>
+    </div>
+
+    <div
+      style="
+        background-color: black;
+        padding: 8px;
+        display: flex;
+        margin-top: 40px;
+        height: 100px;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <div style="background-color: lightblue; width: 100px">100px</div>
+      <div style="background-color: pink; flex: 0">200px</div>
+      <div style="background-color: lightblue; width: 100px">100px</div>
     </div>
   </body>
 </html>
