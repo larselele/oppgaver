@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 style="margin-bottom: 16px">Oppgaver til flexbox</h1>
+    <p class="oppgave">1: Lag en flexbox med 2 items. Widths = 200px | 75px</p>
+    <div style="display: flex">
+      <div style="background-color: lightblue; width: 200px">200px</div>
+      <div style="background-color: pink; width: 75px">75px</div>
+    </div>
+
+    <p class="oppgave">
+      2: Lag en flexbox med 3 items. Widths = 50px | Gjenværende plass | 200px
+    </p>
+    <div style="display: flex">
+      <div style="background-color: lightblue; width: 50px">item 1</div>
+      <div style="background-color: pink; flex: 1">item 2</div>
+      <div style="background-color: lightblue; width: 200px">item 3</div>
+    </div>
+
+    <p class="oppgave">
+      3: Lag en flexbox med 4 items som er jevnt distribuert i containeren
+    </p>
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+      "
+    >
+      <div style="background-color: lightblue; width: 50px">item 1</div>
+      <div style="background-color: lightblue; width: 50px">item 2</div>
+      <div style="background-color: lightblue; width: 50px">item 3</div>
+      <div style="background-color: lightblue; width: 50px">item 4</div>
+    </div>
+
+    <p class="oppgave">
+      4: Gjenskap flexboxen under med height: 100px; og border: 1px solid black;
+    </p>
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        height: 100px;
+        align-items: center;
+      "
+    >
+      <div style="background-color: lightblue; width: 50px">item 1</div>
+      <div style="background-color: lightblue; width: 50px">item 2</div>
+    </div>
+  </body>
+</html>

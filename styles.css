@@ -1,16 +1,31 @@
-body {
-  background-color: red;
+* {
+  font-family: Arial;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 p {
-  font-family: "Times New Roman", Times, serif;
+  max-width: 800px;
 }
 
-span.jan {
-  font-family: Roboto;
+.oppgave {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 100px;
 }
 
-p.roboto {
-  font-family: Roboto;
-  font-size: 49px;
+.oppgave:first-of-type {
+  margin-top: 0;
+}
+
+.secondary {
+  color: #636363;
+}
+
+.challenge {
+  color: rgb(214, 0, 0);
+}
+
+body {
+  padding: 32px;
 }
