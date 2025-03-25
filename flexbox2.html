@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested flexbox</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="flexbox2.css" />
+  </head>
+  <body>
+    <h1 style="margin-bottom: 16px">Øving på nested flexbox</h1>
+
+    <p class="oppgave">
+      1: Lag en flexbox med to elementer (width: 100px og 200px). Gjør det
+      første elementet til en flexbox for å skape dette designet:
+    </p>
+    <div style="display: flex">
+      <div
+        style="
+          background-color: darkseagreen;
+          width: 100px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <div style="background-color: black; color: white">item 1</div>
+      </div>
+      <div style="background-color: lightgreen; width: 200px"></div>
+    </div>
+
+    <p class="oppgave">
+      2: På samme måte som i første oppgave, bruk nested flexbox (flexbox inni
+      flexbox) til å lage dette designet:
+    </p>
+    <div class="flexbox">
+      <div class="column1"><div class="end">start-end</div></div>
+      <div class="column2">
+        <div>row1</div>
+        <div class="row2">
+          <div class="row2-item">row2</div>
+          <div class="row2-item">row2</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="oppgave">
+      3: Bryt ned designet i vertikale og horisontale layouter (tegn eller se
+      for deg i hodet), og bruk det til å kode designet.
+    </p>
+    <div class="container">
+      <div class="inbox-label">ALL INBOXES</div>
+      <div class="email">
+        <div class="sender-picture-container">
+          <img class="sender-picture" src="img/cat.jpg" />
+        </div>
+        <div class="email-content">
+          <div class="email-header">
+            <div class="sender-name">Catfood Promotions</div>
+            <div class="send-time">4:58 PM</div>
+          </div>
+          <div class="subject">Biggest sales of the year!</div>
+          <div class="message">
+            Hey there! We're writing to tell you about our...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="oppgave">
+      4: Lag noen kopier av koden fra forrige oppgave og gjenskap dette:
+    </p>
+    <div class="container">
+      <div class="inbox-label">ALL INBOXES</div>
+      <div class="email">
+        <div class="sender-picture-container">
+          <img class="sender-picture" src="img/cat.jpg" />
+        </div>
+        <div class="email-content">
+          <div class="email-header">
+            <div class="sender-name">Catfood Promotions</div>
+            <div class="send-time">4:58 PM</div>
+          </div>
+          <div class="subject">Biggest sales of the year!</div>
+          <div class="message">
+            Hey there! We're writing to tell you about our...
+          </div>
+        </div>
+      </div>
+      <div class="email">
+        <div class="sender-picture-container">
+          <img class="sender-picture" src="img/dog.jpg" />
+        </div>
+        <div class="email-content">
+          <div class="email-header">
+            <div class="sender-name">Best Buy</div>
+            <div class="send-time">12:32 PM</div>
+          </div>
+          <div class="subject">Your Best Buy eReceipt</div>
+          <div class="message">
+            Thank you for shopping at Best Buy, here is...
+          </div>
+        </div>
+      </div>
+      <div class="email">
+        <div class="sender-picture-container">
+          <img class="sender-picture" src="img/bird.jpg" />
+        </div>
+        <div class="email-content">
+          <div class="email-header">
+            <div class="sender-name">Birdflix</div>
+            <div class="send-time">9:00 AM</div>
+          </div>
+          <div class="subject">Here's what's coming soon to Birdflix</div>
+          <div class="message">
+            Brand new movies and shows, old favorites...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="oppgave">
+      5: Bryt ned designet i vertikale og horisontale layouter (tegn eller se
+      for deg i hodet). Bruk det til å kode designet ved hjelp av nested
+      flexbox.
+    </p>
+    <div class="tweet">
+      <div class="profile-picture-column">
+        <img class="profile-picture" src="img/cat.jpg" />
+      </div>
+      <div class="tweet-column">
+        <div class="tweet-header">
+          <div class="tweet-author">Mr. Cat</div>
+          <div class="tweet-author-handle">@catman</div>
+        </div>
+        <div class="tweet-content">
+          What is life like as a successful cat? New video is up!
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-column"></div>
+          <div class="video-info-column">
+            <div class="video-website">youtube.com</div>
+            <div class="video-title">
+              I got chased by a dog and BARELY SURVIVED
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
