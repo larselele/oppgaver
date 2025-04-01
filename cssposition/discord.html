@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS position</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: red;
+        display: flex;
+      }
+
+      .left-section {
+        background-color: #1d1d1d;
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .right-section {
+        background-color: #242424;
+        width: 260px;
+        padding: 24px 24px;
+      }
+
+      .user-img {
+        height: 72px;
+        width: 72px;
+        border-radius: 1000px;
+        object-fit: cover;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      p.header {
+        color: lightgrey;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      p.icon {
+        color: #929292;
+        font-size: 32px;
+      }
+
+      p {
+        color: #929292;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      body {
+        height: 3000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 500px;
+        margin-left: 332px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="left-section">
+        <img src="/img/cat.jpg" class="user-img" alt="" />
+        <img src="/img/bird.jpg" class="user-img" alt="" />
+
+        <img src="/img/dog.jpg" class="user-img" alt="" />
+      </div>
+      <div class="right-section">
+        <div class="header">
+          <p class="header">INFO</p>
+          <p class="icon">+</p>
+        </div>
+        <p># new-videos</p>
+        <p># updates</p>
+        <p># faq</p>
+        >
+      </div>
+    </div>
+    <h1>scrollable content</h1>
+    <h1>scrollable content</h1>
+
+    <h1>scrollable content</h1>
+
+    <h1>scrollable content</h1>
+
+    <h1>scrollable content</h1>
+
+    <h1>scrollable content</h1>
+  </body>
+</html>

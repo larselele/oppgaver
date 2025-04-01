@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #1a1a1e;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+      }
+      .card {
+        border: 1px solid #333333;
+        width: 300px;
+        border-radius: 8px;
+        background-color: #202024;
+        overflow: hidden;
+      }
+      .stats-container {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        align-items: end;
+        color: white;
+        font-size: 12px;
+      }
+
+      .card-content {
+        padding: 28px 16px 16px 16px;
+        height: 174px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
+      * {
+        margin: 0;
+        font-family: Arial;
+      }
+
+      p {
+        color: white;
+      }
+
+      p.title {
+        font-weight: bold;
+      }
+
+      p.description {
+        margin: 4px 0px 16px 0px;
+      }
+
+      .stat {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .online {
+        width: 8px;
+        height: 8px;
+        background-color: lightgreen;
+        border-radius: 100px;
+      }
+
+      .members {
+        width: 8px;
+        height: 8px;
+        background-color: white;
+        border-radius: 100px;
+      }
+
+      .avatar {
+        position: absolute;
+        top: -40px;
+        border-radius: 16px;
+        overflow: hidden;
+        height: 48px;
+        border: 4px solid #202024;
+      }
+
+      .avatar > img {
+        object-fit: cover;
+      }
+
+      .farge {
+        height: 28px;
+        width: 28px;
+      }
+
+      .wrapper {
+        display: flex;
+        margin-top: 200px;
+        gap: 60px;
+      }
+
+      .info {
+        padding: 20px;
+      }
+
+      .color-card {
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid grey;
+        margin-bottom: 8px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <img src="/img/minecraft.jpg" alt="" />
+        <div class="card-content">
+          <p class="title">MINECRAFT</p>
+          <p class="description">The official Minecraft Discord!</p>
+          <div class="stats-container">
+            <div class="avatar">
+              <img src="/img/minecraft-avatar.jpg" alt="" />
+            </div>
+            <div class="stat">
+              <div class="online"></div>
+              <span>204,453 Online</span>
+            </div>
+            <div class="stat">
+              <div class="members"></div>
+              <span>1,847,770 Members</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="color-card">
+          <div class="farge" style="background-color: #202024"></div>
+          <span>#202024</span>
+        </div>
+
+        <div class="color-card">
+          <div class="farge" style="background-color: #1a1a1e"></div>
+          <span>#1a1a1e</span>
+        </div>
+        <div class="color-card">
+          <div class="farge" style="background-color: #333333"></div>
+          <span>#333333</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
