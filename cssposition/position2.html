@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position: fixed</title>
+    <style>
+      p {
+        margin-top: 300px;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      height: 3000px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    "
+  >
+    <div
+      style="
+        position: fixed;
+        top: 20px;
+        background-color: red;
+        color: white;
+        padding: 20px;
+      "
+    >
+      Sett height: 3000px på body slik at du kan scrolle siden.
+    </div>
+
+    <div
+      style="
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: darkgreen;
+        color: white;
+        width: 200px;
+        padding: 20px;
+        box-sizing: border-box;
+      "
+    >
+      right sidebar
+    </div>
+    <div style="position: fixed; top: 20px; left: 20px">
+      <a href="../css-position.html">Tilbake</a>
+    </div>
+
+    <p>scrollable content</p>
+    <p>scrollable content</p>
+    <p>scrollable content</p>
+    <p>scrollable content</p>
+    <p>scrollable content</p>
+    <p>scrollable content</p>
+    <p>scrollable content</p>
+    <p>scrollable content</p>
+  </body>
+</html>
